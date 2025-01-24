@@ -349,6 +349,9 @@ template {
   color: #26242a;
   font-size: 1.5rem;
 }
+#mainWrapper h3 {
+  text-align: center;
+}
 #mainWrapper p {
   margin: 0;
   text-align: center;
