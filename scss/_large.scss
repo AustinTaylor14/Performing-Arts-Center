@@ -1,0 +1,54 @@
+@media (min-width: 901px) {
+    #headerWrapper {
+        header {
+            justify-content: space-between;
+            padding: 1rem 2rem;
+
+            img {
+                height: 60px;
+            }
+
+            span {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    #navWrapper {
+       
+                ul {
+                    padding: 0;
+                    margin: 0 $gutter;
+                    display: flex;
+                    flex-direction: row;
+
+                li {
+                    margin-right: 2rem;
+
+                    a {
+                        font-size: 1.1rem;
+                        padding: 1rem 1.5rem;
+                    }
+                }
+        }
+    }
+
+    #mainWrapper {
+        padding: 2rem;
+
+        main {
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #footerWrapper {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+}
