@@ -304,7 +304,9 @@ template {
   color: white;
 }
 #headerWrapper .logo {
+  padding: 10px;
   display: flex;
+  gap: 10px;
   align-items: center;
 }
 
@@ -319,6 +321,8 @@ template {
 }
 #navWrapper ul li {
   list-style-type: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #navWrapper ul li a {
   color: #666;
@@ -331,8 +335,8 @@ template {
   color: black;
 }
 #navWrapper ul li.active a {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #26242a;
+  background-color: rgba(78, 78, 78, 0.8);
+  color: white;
   border-radius: 10px;
 }
 
@@ -376,7 +380,7 @@ template {
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 35rem) and (min-width: 601px) and (max-width: 900px) {
+@media only screen and (min-width: 35rem) {
   #headerWrapper header img {
     height: 50px;
   }
@@ -407,7 +411,7 @@ template {
     font-size: 0.9rem;
   }
 }
-@media only screen and (min-width: 64rem) and (min-width: 901px) {
+@media only screen and (min-width: 64rem) {
   #headerWrapper header {
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -418,29 +422,29 @@ template {
   #headerWrapper header span {
     font-size: 2rem;
   }
-  #navWrapper ul {
+  #headerWrapper #navWrapper ul {
     padding: 0;
     margin: 0 15px;
     display: flex;
     flex-direction: row;
   }
-  #navWrapper ul li {
+  #headerWrapper #navWrapper ul li {
     margin-right: 2rem;
   }
-  #navWrapper ul li a {
+  #headerWrapper #navWrapper ul li a {
     font-size: 1.1rem;
     padding: 1rem 1.5rem;
   }
-  #mainWrapper {
+  #headerWrapper #mainWrapper {
     padding: 2rem;
   }
-  #mainWrapper main h1 {
+  #headerWrapper #mainWrapper main h1 {
     font-size: 2rem;
   }
-  #mainWrapper main p {
+  #headerWrapper #mainWrapper main p {
     font-size: 1rem;
   }
-  #footerWrapper {
+  #headerWrapper #footerWrapper {
     padding: 2rem;
     font-size: 1rem;
   }
