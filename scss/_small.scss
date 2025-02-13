@@ -1,102 +1,152 @@
-#headerWrapper {
 
+
+#headerWrapper {
     background-color: $primary-color;
     color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     .logo {
         padding: 10px;
         display: flex;
         gap: 10px;
         align-items: center;
-    }
 
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+    }
 }
 
 #navWrapper {
-
     background-color: $secondary-color;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+    ul {
+        padding: 0;
+        margin: 0 $gutter;
+        display: flex;
+        flex-direction: column;
 
-        ul {
-            padding: 0;
-            margin: 0 $gutter;
-            display: flex;
-            flex-direction: column;
+        li {
+            list-style-type: none;
+            padding: 10px 0;
 
-            li {
-                list-style-type: none;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                a {
-                    color: $grey-color;
-                    text-decoration: none;
-                    display: block;
-                    padding: 0.8rem $gutter;
+            a {
+                color: $grey-color;
+                text-decoration: none;
+                display: block;
+                padding: 0.8rem $gutter;
+                transition: background-color 0.3s, color 0.3s;
 
-                    &:hover {
-                        background-color: rgba(255, 255, 255, 0.1);
-                        color: black;
-                    }
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.1);
+                    color: black;
                 }
+            }
 
-                &.active a {
-                    background-color: rgba(78, 78, 78, 0.8);
-                    color: white;
-                    border-radius: 10px;
-                   
-                }
+            &.active a {
+                background-color: rgba(78, 78, 78, 0.8);
+                color: white;
+                border-radius: 10px;
             }
         }
     }
-
-
-
-
+}
 
 #mainWrapper {
     padding: 1rem;
 
-    .show-list  {
+    #about {
+        h2 {
+            color: $primary-color;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid $secondary-color;
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            color: $grey-color;
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: justify;
+            margin-top: 1rem;
+        }
+    }
+
+    .content {
+        flex: 1;
+        background-color: $secondary-color;
+        border-radius: 10px;
+        margin-right: 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .show-list {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
         gap: 10px;
         list-style-type: none;
-            
-        
+
+        li {
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            h3 {
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+            }
+
+            .something {
+                width: 250px;
+                height: 400px;
+                border-radius: 14px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            p {
+                margin: 0;
+                text-align: center;
+            }
+        }
     }
 
+    h1 {
+        color: $primary-color;
+        font-size: 1.5rem;
+    }
 
-        h1 {
-            color: $primary-color;
-            font-size: 1.5rem;
-            
-        }
-        h3 {
-            text-align: center;
-        }
-        p {
-            margin: 0;
-            text-align: center;
-           
-        }
+    h3 {
+        text-align: center;
+    }
 
-        .something{
-            width: 250px;
-            height: 400px;
-            border-radius: 14px;
-        }
-
+    p {
+        margin: 0;
+        text-align: center;
+    }
 }
-
 #footerWrapper {
     background-color: $primary-color;
     color: white;
     text-align: center;
     padding: 1rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 
     a {
         color: rgba(255, 255, 255, 0.8);
         text-decoration: none;
+        transition: text-decoration 0.3s;
 
         &:hover {
             text-decoration: underline;
