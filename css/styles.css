@@ -310,7 +310,7 @@ template {
   gap: 10px;
   align-items: center;
 }
-#headerWrapper .logo h1 {
+#headerWrapper .logo span {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
